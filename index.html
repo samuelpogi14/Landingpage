@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call of Duty Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            background-color: #1e1e1e;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            height: auto;
+            margin-top: 100px;
+        }
+        .header {
+            background-color: #d32f2f;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .section1, .section, .section2, .section3 {
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .section1 {
+            height: 140px;
+        }
+        .section {
+            height: 200px;
+        }
+        .section2 {
+            height: 200px;
+            display: flex;
+            align-items: center;
+        }
+        .section2 img {
+            margin-right: 15px;
+        }
+        .section2 p {
+            font-size: 12px;
+            line-height: 1.5;
+        }
+        .section3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+        }
+        .section3 span {
+            text-align: center;
+            font-size: 18px;
+        }
+        .cta-button {
+            display: block;
+            background-color: #d32f2f;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 60px;
+        }
+        .cta-button:hover {
+            background-color: #b71c1c;
+        }
+        .quote {
+            font-style: italic;
+            text-align: center;
+            color: #bbb;
+        }
+        .video-thumbnail {
+            position: relative;
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .video-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .play-button::before {
+            content: '\25B6';
+            color: #fff;
+            font-size: 30px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .header {
+                font-size: 22px;
+            }
+            .section1,
+            .section,
+            .section2,
+            .section3 {
+                height: auto;
+                padding: 10px;
+            }
+            .section2 img {
+                width: 100px;
+                height: auto;
+            }
+            .section2 p {
+                font-size: 10px;
+            }
+            .cta-button {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Call of Duty</div>
+        <div class="content">
+            <div class="section1">
+                <h3>About</h3>
+                <ul>
+                    <li>Intense Multiplayer Battles</li>
+                    <li>Realistic War Experience</li>
+                    <li>Legendary Campaign Mode</li>
+                </ul>
+                <a href="#" class="cta-button">JOIN THE BATTLE NOW</a>
+            </div>
+            <div class="section">
+                <div class="video-thumbnail">
+                    <img src="codm.jfif" alt="CODM Thumbnail">
+                    <div class="play-button"></div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="quote">"Victory is reserved for those who are willing to pay its price."</div>
+        <div class="content">
+            <div class="section2">
+                <img src="images (1).jfif" alt="codm pic" height="200" width="150">
+                <p><strong>Call of Duty: Mobile</strong> is a free-to-play shooter game developed by Timi Studio Group and published by Activision. The game was released on October 1, 2019, and became one of the largest mobile game launches in history, generating over US$480 million with 270 million downloads within a year.</p>
+            </div>
+            <div class="section3">
+                <span>✔️ Trusted by Millions Worldwide</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
